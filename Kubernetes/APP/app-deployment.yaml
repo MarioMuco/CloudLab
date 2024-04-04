@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: lmilt95/fti:latest
+        image: mariofti/fti:latest
         imagePullPolicy: Always
         securityContext:
           allowPrivilegeEscalation: false
