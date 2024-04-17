@@ -10,7 +10,7 @@ spring:
     password: Z0iVSPAjp_9_u8d3NnPwP29jvVDdiTtP
     #########################################################################################
     
-  # JPA properties
+  # JPA properties    
   jpa:
     hibernate.ddl-auto: update
     database-platform: org.hibernate.dialect.PostgreSQLDialect
