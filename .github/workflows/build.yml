@@ -18,7 +18,7 @@ jobs:
     - name: Publish to Docker Hub
       uses: docker/build-push-action@v1  
       with:       
-       username: ${{ secrets.DOCKER_HUB_USERNAME }} 
-       password:  ${{ secrets.DOCKER_HUB_PASSWORD }}
-       repository: MarioMuco/CloudLab      
+       username: ${{secrets.DOCKER_HUB_USERNAME}} 
+       password:  ${{secrets.DOCKER_HUB_PASSWORD}}
+       repository: MarioMuco/CloudLab    
        tags: ${{github.run_number}}
