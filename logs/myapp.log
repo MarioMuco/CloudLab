@@ -1,0 +1,73 @@
+2024-04-18 12:30:04,722 [main] INFO  c.h.s.SpringBootRestApiPostgresqlApplication - Starting SpringBootRestApiPostgresqlApplication using Java 17.0.9 with PID 18796 (C:\Users\mucom\Desktop\Projects\CloudLab\target\classes started by mucom in C:\Users\mucom\Desktop\Projects\CloudLab)
+2024-04-18 12:30:04,727 [main] INFO  c.h.s.SpringBootRestApiPostgresqlApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-18 12:30:05,864 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-18 12:30:05,993 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 110 ms. Found 2 JPA repository interfaces.
+2024-04-18 12:30:06,934 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-04-18 12:30:06,953 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-04-18 12:30:06,955 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-04-18 12:30:07,129 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-04-18 12:30:07,130 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2310 ms
+2024-04-18 12:30:07,394 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-18 12:30:07,546 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-04-18 12:30:07,552 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-04-18 12:30:08,071 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-18 12:30:08,124 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-04-18 12:30:10,473 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7c226095
+2024-04-18 12:30:10,479 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-04-18 12:30:10,720 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-18 12:30:13,168 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 12:30:14,376 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-18 12:30:15,007 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-18 12:30:15,812 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-18 12:30:15,828 [main] INFO  c.h.s.SpringBootRestApiPostgresqlApplication - Started SpringBootRestApiPostgresqlApplication in 11.971 seconds (process running for 12.508)
+2024-04-18 12:30:31,884 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-18 12:30:31,886 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-04-18 12:30:31,891 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-04-18 12:30:31,989 [http-nio-8080-exec-1] INFO  c.h.s.c.AuthorRestController - Fetching author with ID: 106
+2024-04-18 12:30:35,877 [http-nio-8080-exec-3] INFO  c.h.s.c.AuthorRestController - Fetching author with ID: 105
+2024-04-18 12:33:03,630 [http-nio-8080-exec-6] INFO  c.h.s.c.AuthorRestController - Fetching author with ID: 107
+2024-04-18 12:43:15,684 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-18 12:43:15,699 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-18 12:43:17,132 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-04-18 12:43:28,600 [main] INFO  c.h.s.SpringBootRestApiPostgresqlApplication - Starting SpringBootRestApiPostgresqlApplication using Java 17.0.9 with PID 14764 (C:\Users\mucom\Desktop\Projects\CloudLab\target\classes started by mucom in C:\Users\mucom\Desktop\Projects\CloudLab)
+2024-04-18 12:43:28,604 [main] INFO  c.h.s.SpringBootRestApiPostgresqlApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-18 12:43:29,683 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-18 12:43:29,775 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 2 JPA repository interfaces.
+2024-04-18 12:43:30,656 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-04-18 12:43:30,670 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-04-18 12:43:30,673 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-04-18 12:43:30,845 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-04-18 12:43:30,846 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2144 ms
+2024-04-18 12:43:31,069 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-18 12:43:31,173 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-04-18 12:43:31,177 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-04-18 12:43:31,638 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-18 12:43:31,695 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-04-18 12:43:38,258 [main] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Default transaction isolation level detection failed (This connection has been closed.).
+2024-04-18 12:43:38,262 [main] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Error thrown while acquiring connection from data source
+2024-04-18 12:43:38,315 [main] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+2024-04-18 12:43:38,349 [main] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+2024-04-18 12:43:38,429 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-18 12:43:39,842 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 12:43:39,875 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-04-18 12:43:43,385 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1d6a0962
+2024-04-18 12:43:43,391 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-04-18 12:43:53,313 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-18 12:43:54,172 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-18 12:43:55,305 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-18 12:43:55,325 [main] INFO  c.h.s.SpringBootRestApiPostgresqlApplication - Started SpringBootRestApiPostgresqlApplication in 27.571 seconds (process running for 28.169)
+2024-04-18 12:44:18,872 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-18 12:44:18,874 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-04-18 12:44:18,876 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-04-18 12:44:18,995 [http-nio-8080-exec-2] INFO  c.h.s.c.AuthorRestController - Fetching author with ID: 107
+2024-04-18 12:44:26,572 [http-nio-8080-exec-1] INFO  c.h.s.c.AuthorRestController - Fetching author with ID: 106
+2024-04-18 12:45:09,615 [http-nio-8080-exec-3] INFO  c.h.s.c.AuthorRestController - Getting book by id: 106
+2024-04-18 12:45:09,890 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException: No value present] with root cause
+2024-04-18 12:45:14,612 [http-nio-8080-exec-4] INFO  c.h.s.c.AuthorRestController - Getting new books
+2024-04-18 12:45:53,725 [http-nio-8080-exec-5] INFO  c.h.s.c.AuthorRestController - Getting book by id: 65
+2024-04-18 12:45:59,871 [http-nio-8080-exec-6] INFO  c.h.s.c.AuthorRestController - Getting new books
+2024-04-18 12:47:32,102 [http-nio-8080-exec-9] INFO  c.h.s.c.AuthorRestController - Getting book by id: 68
+2024-04-18 12:56:01,567 [http-nio-8080-exec-1] INFO  c.h.s.c.AuthorRestController - Getting new books
+2024-04-18 12:56:26,334 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-18 12:56:26,343 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-18 12:56:28,022 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -20,6 +20,9 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Collection;
 import java.util.Optional;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 /**
  * Created by IntelliJ IDEA.
  * Project : spring-boot-rest-api-postgresql
@@ -34,32 +37,46 @@ import java.util.Optional;
 @RequestMapping("/api/authors")
 public class AuthorRestController {
 
+    private static final Logger logger = LogManager.getLogger(AuthorRestController.class);
+
     @Autowired
     private AuthorRepository repository;
 
     @PostMapping
     public ResponseEntity<?> addAuthor(@RequestBody Author author) {
+        logger.info("Posting new authors");
         return new ResponseEntity<>(repository.save(author), HttpStatus.CREATED);
     }
 
     @GetMapping
     public ResponseEntity<Collection<Author>> getAllAuthors() {
+        logger.info("Getting the list of authors");
         return new ResponseEntity<>(repository.findAll(), HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<Author> getAuthorWithId(@PathVariable Long id) {
-        return new ResponseEntity<Author>(repository.findById(id).get(), HttpStatus.OK);
+        logger.info("Fetching author with ID: {}", id);
+        
+        Author author = repository.findById(id).orElse(null);
+        if (author == null) {
+            logger.error("Author not found with ID: {}", id);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        
+        return new ResponseEntity<>(author, HttpStatus.OK);
     }
+
 
     @GetMapping(params = {"name"})
     public ResponseEntity<Collection<Author>> findAuthorWithName(@RequestParam(value = "name") String name) {
+        logger.info("Fetching author with name: {}", name);
         return new ResponseEntity<>(repository.findByName(name), HttpStatus.OK);
     }
 
     @PutMapping("/{id}")
     public ResponseEntity<Author> updateAuthorFromDB(@PathVariable("id") long id, @RequestBody Author author) {
-
+        logger.info("Editing author with id: {}", id);
         Optional<Author> currentAuthorOpt = repository.findById(id);
         Author currentAuthor = currentAuthorOpt.get();
         currentAuthor.setName(author.getName());
@@ -71,11 +88,13 @@ public class AuthorRestController {
 
     @DeleteMapping("/{id}")
     public void deleteAuthorWithId(@PathVariable Long id) {
+        logger.info("Deleting author with id: {}", id);
         repository.deleteById(id);
     }
 
     @DeleteMapping
     public void deleteAllAuthors() {
+        logger.info("Deleting all authors");
         repository.deleteAll();
     }
 }
