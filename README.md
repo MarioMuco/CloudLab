@@ -1,6 +1,6 @@
 # spring-boot-rest-api-postgresql
 
-#### Plain REST API CRUD with Spring Boot and PostgreSQL.
+### Plain REST API CRUD with Spring Boot and PostgreSQL.
 
 Technology stack:
 
@@ -11,55 +11,61 @@ Technology stack:
 * Hibernate;
 * Spring Security (as basic authentication).
 
-##### To run this application use:
+#### To run this application use:
 
 `mvn clean spring-boot:run`
 
-The view in the Postman:
+#### The view in the Postman:
 
-Add new Book
+Add new Book/Author
 
 `POST /api/books`
+`POST /api/authors`
 
 http://localhost:8080/api/books
 
 ![Add New Book](img/add.png "Add New Book")
 
-Get All Books
+Get All Books/Authors
 
 `GET /api/books`
+`GET /api/authors`
 
 http://localhost:8080/api/books
 
 ![Get All Books](img/list.png "Get All Books")
 
-Get Book By Id
+Get Book/Author By Id
 
 `GET /api/books/{id}`
+`GET /api/authors/{id}`
 
 http://localhost:8080/api/books/{id}
 
 ![Get Book By Id](img/getId.png "Get Book By Id")
 
-Get Book By Name
+Get Book/Author By Name
 
 `GET /api/books?name=name`
+`GET /api/authors?name=name`
 
 http://localhost:8080/api/books?name=name
 
 ![Get Book By Name](img/name.png "Get Book By Name")
 
-Delete Book By Id
+Delete Book/Author By Id
 
 `DELETE /api/books/{id}`
+`DELETE /api/authors/{id}`
 
 http://localhost:8080/api/books/{id}
 
 ![Delete Book By Id](img/deleteId.png "Delete Book By Id")
 
-Delete All Books
+Delete All Books/Authors
 
 `DELETE /api/books`
+`DELETE /api/authors`
 
 http://localhost:8080/api/books
 
@@ -70,6 +76,7 @@ http://localhost:8080/api/books
 
 
 /////////////
+To view logs go at "myapp.log"
 
 kubectl config current-context -- To view your current context
 kubectl config get-contexts -- To list all your contexts
